@@ -16,7 +16,7 @@ print('Check result :', colors)
 # Example 2: 
 # List [] will start : 0 to .... , to left to Right :
 studentList = ["Peter", "Rush" , "Micheal", "Obama", "Trump", "Biden" , "Clinton", "Snoop-dogg",'Joinwick', 'Joincena','Rechar','Monica']
-"""
+
 print('Filter name in Lists :', studentList[2])
 print('Filter name in Lists :', studentList[6])
 print('Filter name in Lists :', studentList[:])
@@ -45,9 +45,9 @@ print('Length of the list :',len(studentList))
 # count() /Count the number of elements that satisfy the condition :
 print('Count :', studentList.count('Rush'))
 print('Count :', studentList.count('Taylor'))
-"""
+
 # in /Check in data inside List :
-"""
+
 if 'Monica' in studentList :
    # studentList.remove('Rush')
     print('List students current for have your name :', studentList)
@@ -63,7 +63,7 @@ if 'Peter' in studentList:
     print('Remove completed :', studentList)
 else: 
     print('Remove failed')
-"""
+
 # POP() : delete by position  :
 studentList.pop(0)
 print(studentList)
