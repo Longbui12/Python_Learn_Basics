@@ -13,3 +13,8 @@ for j in range(2 , 12):
         print('{0} x {1} = {2}'.format(j, i, j * i))
 
 # Home work : again practice exercise above (loop 'FOR' & nested loop 'FOR')
+
+# Loops 100 I love you :
+for _ in range(101):  
+    print("I Love You !! ❤ ❤ 💖 " , _)
+
