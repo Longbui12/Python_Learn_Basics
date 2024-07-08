@@ -7,7 +7,7 @@ for i in range(1,11):
 
 
 # ex2 : Print all Multiplication table : dùng vòng lặp vòng nhau :
-for j in range(2 , 10 ):
+for j in range(2 , 12):
     print('Multiplication table :', j)
     for i in range(1, 11):
         print('{0} x {1} = {2}'.format(j, i, j * i))
