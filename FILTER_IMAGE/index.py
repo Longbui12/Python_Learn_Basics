@@ -93,6 +93,7 @@
 import os
 import shutil
 import hashlib
+import time
 
 def hash_file(file_path):
     """Tính toán hàm băm của một tệp."""
@@ -103,8 +104,8 @@ def hash_file(file_path):
     return hasher.hexdigest()
 
 # Đường dẫn tới thư mục chứa các ảnh cần sao chép : (đường dẫn sẽ dùng dấu / or \\ )
-source_dir = 'C:/Users/lenovo/OneDrive/Desktop/picture project hospital/Mẫu logo làm áo/Ảnh chế'  # Thay thế bằng đường dẫn thực tế (đường dẫn file cần sao chép)
-destination_dir = 'C:\\Users\\lenovo\\OneDrive\\Desktop\\COPY_IMAGES'  # Thay thế bằng đường dẫn thực tế (đường dẫn file được sao chép)
+source_dir = 'D:\Image 1'  # Thay thế bằng đường dẫn thực tế (đường dẫn file cần sao chép)
+destination_dir = 'D:\Image 2'  # Thay thế bằng đường dẫn thực tế (đường dẫn file được sao chép)
 
 try:
     # Kiểm tra xem thư mục đích có tồn tại hay không, nếu không thì tạo mới :
@@ -117,6 +118,10 @@ try:
     # Biến đếm số lượng ảnh đã sao chép :                         
     copied_count = 0
 
+    # Bắt đầu đếm thời gian :
+    start_time = time.time()
+
+   
     # Lặp qua tất cả các tập tin trong thư mục nguồn :
     for filename in os.listdir(source_dir):
         # Kiểm tra xem tập tin có phải là ảnh hay không (ví dụ như .jpg, .png, .jpeg) :
@@ -142,7 +147,11 @@ try:
                 # Tăng biến đếm lên sau khi sao chép thành công :
                 copied_count += 1
 
+                # Kết thúc đếm thời gian
+                end_time = time.time()
+                elapsed_time = end_time - start_time
+               
     print(f"Đã sao chép được : {copied_count} ảnh từ thư mục gốc tới thư mục đích, không có tệp trùng lặp.")
-
+    print(f'Thời gian để sao chép các ảnh: {elapsed_time:.2f} giây')
 except Exception as e:
     print(f"Đã xảy ra lỗi: {e}")
