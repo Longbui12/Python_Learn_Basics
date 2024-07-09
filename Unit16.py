@@ -61,4 +61,4 @@ print(s)
 
 # Ex 8: Tìm và Đếm số lượng chuỗi con :
 s = "Lập trình Python đang là xu hướng hiện nay. So, you need learn programing ."
-print(s.find('Pythonx'))
+print(s.find('Python'))
