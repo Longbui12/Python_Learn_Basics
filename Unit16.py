@@ -61,8 +61,25 @@ print(s)
 
 # Ex 8: Tìm và Đếm số lượng chuỗi con :
 # Hàm tìm : find()
-s = "Lập trình Python đang là xu hướng hiện nay. So, you need learn programing ."
+s = "Lập trình Python đang là xu hướng hiện nay. So, you need learn programing Python ."
+print(s.find('Pythonx')) # nếu kết quả trả về -1 là không tìm thấy, ngược lại trả về số nguyên (vị trí đầu tiên nó tìm thấy) 
 print(s.find('Python'))
 
 # Hàm Đếm : count()
-print(s.count('Python'))
+print(s.count('Python')) # đếm xem có bao giá trị trong chuỗi .
+
+# Hàm thay thế : replace()
+s = "Lập trình Python đang là xu hướng hiện nay. So, you need learn programing Python ."
+s = s.replace('Python' , 'PYTHON')
+print(s)
+
+# Cắt chuỗi thành 1 LIST : split()
+s = "Lập trình Python đang là xu hướng hiện nay. So, you need learn programing Python."
+list_1 = s.split(' ')
+print(list_1)
+
+# format() in string :
+print('{0} + {1} = {2}'.format(7 , 3 , 7 + 3))
+
+# Lấy chuỗi con : 
+print(s[0 : 21])
