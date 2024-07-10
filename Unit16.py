@@ -60,5 +60,9 @@ s = s.lower()
 print(s)
 
 # Ex 8: Tìm và Đếm số lượng chuỗi con :
+# Hàm tìm : find()
 s = "Lập trình Python đang là xu hướng hiện nay. So, you need learn programing ."
 print(s.find('Python'))
+
+# Hàm Đếm : count()
+print(s.count('Python'))
