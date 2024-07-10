@@ -78,6 +78,9 @@ s = "Lập trình Python đang là xu hướng hiện nay. So, you need learn pr
 list_1 = s.split(' ')
 print(list_1)
 
+list_2 = s.split('.')
+print(list_2)
+
 # format() in string :
 print('{0} + {1} = {2}'.format(7 , 3 , 7 + 3))
 
