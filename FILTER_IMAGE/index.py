@@ -104,7 +104,7 @@ def hash_file(file_path):
     return hasher.hexdigest()
 
 # Đường dẫn tới thư mục chứa các ảnh cần sao chép : (đường dẫn sẽ dùng dấu / or \\ )
-source_dir = 'C:\\Users\\lenovo\\OneDrive\\Desktop\\picture project hospital\\Mẫu logo làm áo\\Ảnh chế'  # Thay thế bằng đường dẫn thực tế (đường dẫn file cần sao chép)
+source_dir = 'C:\Users\lenovo\OneDrive\Desktop\picture project hospital\Mẫu logo làm áo\Ảnh chế'  # Thay thế bằng đường dẫn thực tế (đường dẫn file cần sao chép)
 destination_dir = 'C:\\Users\\lenovo\\OneDrive\\Desktop\\COPY_IMAGES'  # Thay thế bằng đường dẫn thực tế (đường dẫn file được sao chép)
 
 try:
