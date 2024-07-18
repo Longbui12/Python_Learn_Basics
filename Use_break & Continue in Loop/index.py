@@ -19,4 +19,16 @@ while (n > 0):
         break
 
 # ex4: Vòng lặp lồng nhau :
+for i in range(1, 10):
+    for j in range(2, 10):
+        print("{0}*{1}={2}".format(i, j, i*j))
+        if(j>5):
+            break
+    print("\n")
+
+# Ex5: dung CONTINIUE :
+for i in range(0, 10):
+    if(i%2 ==1):
+        continue
+    print(i)
 
