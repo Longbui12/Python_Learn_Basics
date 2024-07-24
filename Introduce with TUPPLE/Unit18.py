@@ -32,3 +32,14 @@ print(x)
 print(fruit.count('Apple'))
 
 print(fruit.count('Xoài'))
+
+# ex8: search min, search max and sum:
+print(min(gender))
+print(max(fruit))
+print(min(classes))
+print(max(classes))
+print(sum(classes))
+
+# ex9: sort Tuple and move back list: 
+listTc = sorted(fruit)
+print(listTc)
