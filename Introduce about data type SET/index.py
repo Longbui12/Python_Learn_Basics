@@ -16,8 +16,26 @@ hocThem = {'Đàn', 'Vẽ', 'Múa', 'Nhảy'}
 monHoc.update(hocThem)
 print(monHoc)  
 
-# Thêm list vào SET:
+# Thêm vào list SET:
 hocOnThi = ['Võ thuật', 'Kịch', 'Võ thuật']
 print(hocOnThi)
 monHoc.update(hocOnThi)
+print(monHoc)
+
+# Xóa phần tử:
+# Use remove() : nếu phần tủ ko tồn tại sẽ phát sinh lỗi.
+monHoc.remove('Võ thuật') 
+#Use discard : nếu phần tử không tồn tại sẽ không phát sinh lỗi.
+monHoc.discard('Toán')
+print(monHoc)
+
+# Use pop(): Loại bỏ phần tử đầu tiên.
+monHoc.pop()
+print(monHoc)
+
+# Use clear(): Xóa sạch các phần tử.
+monHoc.clear()
+print(monHoc)
+
+del monHoc
 print(monHoc)
