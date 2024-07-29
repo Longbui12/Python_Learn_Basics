@@ -22,10 +22,10 @@ while(True):
     selectofCustomer = int(input('Select :'))
     if(selectofCustomer == 1):
        phoneNumber = input('Enter the prize phone numberEnter the prize phone number :')
-       voteBox.discard(phoneNumber)
+       voteBox.add(phoneNumber)
     elif(selectofCustomer == 2): 
        phoneNumber = input('Enter the prize phone number to be deleted :')
-       voteBox.add(phoneNumber)
+       voteBox.discard(phoneNumber)
     elif(selectofCustomer == 3):
      i = random.randint(0, len(voteBox))
      print('Congratulations on ' + voteBox[i] + 'the winning phone number')
