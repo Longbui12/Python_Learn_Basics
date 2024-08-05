@@ -49,7 +49,7 @@ studentss = {
     'id': 2
 }
 
-# Method Clear() : 
+# Method Clear() : delete all data
 print(studentss)
 
 studentss.clear()
