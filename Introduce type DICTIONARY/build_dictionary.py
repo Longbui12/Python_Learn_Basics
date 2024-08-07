@@ -5,8 +5,9 @@
 # 4. Allows users to delete a word from the dictionary .
 # 5. Allows users to delete entire vocabulary.
 # 6. Allows users to print out the entire vocabulary.
-# 7. Allows users to print out the entire dictionary according to the structure: 'VOCABULARY', 'MEANING'.
-# 8. End program.
+# 7. Allows users to print out the entire meaning.
+# 8. Allows users to print out the entire dictionary according to the structure: 'VOCABULARY', 'MEANING'.
+# 9. End program.
 # ********************************************** #
 
 dictionary = {}
@@ -19,8 +20,9 @@ while(True):
     #    4. Allows users to delete a word from the dictionary .
     #    5. Allows users to delete entire vocabulary.
     #    6. Allows users to print out the entire vocabulary.
-    #    7. Allows users to print out the entire dictionary according to the structure: 'VOCABULARY', 'MEANING'.
-    #    8. End program.
+    #    7. Allows users to print out the entire meaning.
+    #    8. Allows users to print out the entire dictionary according to the structure: 'VOCABULARY', 'MEANING'.
+    #    9. End program.
     # ''')
     select = int(input('Enter your selection: '))
     if(select == 1 or select == 3):
@@ -48,6 +50,10 @@ while(True):
         for x in dictionary.keys():
          print(x)
     elif(select == 7):
+        print('List of vocabulary words in the dictionary: ')
+        for x in dictionary.values():
+         print(x)
+    elif(select == 8):
         if(dictionary):
           print('List of vocabulary words in the dictionary: ')
           for x, y in dictionary.items():
@@ -56,7 +62,7 @@ while(True):
            print('Dictionary is not data')
 
     
-    elif(select == 8):
+    elif(select == 9):
         break
     else:
       print('Incorrect selection entered !! 🤬🤬🤬🧨🚀')
