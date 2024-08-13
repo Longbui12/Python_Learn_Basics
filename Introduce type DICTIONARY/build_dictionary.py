@@ -30,7 +30,6 @@ while(True):
         Meaning = input('Please enter meaning: ')
         dictionary[Vocabulary] = Meaning
         print('Added or updated data')
-
     elif(select == 2):
         Vocabulary = input('Please enter vocabulary: ')
         print('Meaning: ', dictionary[Vocabulary])
@@ -50,7 +49,7 @@ while(True):
         for x in dictionary.keys():
          print(x)
     elif(select == 7):
-        print('List of vocabulary words in the dictionary: ')
+        print('List of meaning words in the dictionary: ')
         for x in dictionary.values():
          print(x)
     elif(select == 8):
@@ -60,8 +59,6 @@ while(True):
             print(x, ':', y)
         else:
            print('Dictionary is not data')
-
-    
     elif(select == 9):
         break
     else:
