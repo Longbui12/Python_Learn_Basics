@@ -84,8 +84,34 @@ print('=======================================')
 # 1) Xây dựng các hàm :
 # nhap(n, list_number)
 # tinhTong(list_number)
+# Giải : 
+# Khai báo biến (variable):
+list_number = []
+n = -1
+# Nhập cho đến khi nào n >= 1
+while(True):
+    try:
+      n = int(input('Nhập vào số lượng phần tử: ')) 
+    except:
+      print("Vui lòng nhập n >= 1")
+    if (n>=1):
+        break
 
+# Hàm nhập()
+def nhap(n, list_number):
+    for i in range(n):
+        list_number.append(int(input('Nhập vào giá trị thứ ' + str(i) + ' : ')))
 
+# Hàm tính tổng:
+def tinhTong(list_number):
+    tong = 0
+    for x in list_number:
+        tong += x
+    return tong
 
+nhap(n, list_number)
+print('Tổng = ' + str(tinhTong(list_number)))
 
-
+# Bài tập thêm:
+# Bài 1: Nhập vào 1 dãy số nguyên, xây dựng hàm cho biết số lượng số chắn trong list
+# Bài 2: NHập vào 1 dãy số nguyên, xây dựng hàm sắp xếp dãy số và trả về list mới.
