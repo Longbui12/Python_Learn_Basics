@@ -1,4 +1,4 @@
-# # Create a function:
+# Create a function:
 # def hello():
 #     print('Hello !')
 
@@ -111,57 +111,3 @@
 
 # nhap(n, list_number)
 # print('Tổng = ' + str(tinhTong(list_number)))
-
-# Bài tập thêm:
-# Bài 1: Nhập vào 1 dãy số nguyên, xây dựng hàm cho biết số lượng số chẵn trong list
-# Bài 2: NHập vào 1 dãy số nguyên, xây dựng hàm sắp xếp dãy số và trả về list mới.
-# Phải xem lại 2 bài tập làm ở dưới cùng rồi làm lại
-# giải bài tập làm thêm số 1:
-dayso = []
-n = -1
-while True:
-  try:
-    n = int(input("nhập vào số nguyên dương là số lượng phần tử: "))
-  except:
-    print("bạn đã nhập sai")
-  if n> 0:
-    break
-def nhapso (n, dayso):
-  for i in range (n):
-    dayso.append(int(input("nhập số thứ: " + str(i) + " là: ")))
-def demso(dayso):
-  demchan =0
-  demle =0
-  for i in dayso:
-    if i%2 == 0:
-      demchan = demchan+1
-    else:
-      demle = demle + 1
-  return(demchan,demle)
-nhapso(n,dayso)
-demso(dayso)
-print("tổng số lượng của số chẵn và tổng số lượng của số lẻ là: " + str(demso(dayso)))
-
-# Bài tập 2:
-
-dayso = []
-n = -1
-while True:
-  try:
-    n = int(input("nhập vào số nguyên dương là số lượng phần tử: "))
-  except:
-    print("bạn đã nhập sai")
-  if n> 0:
-    break
-def nhapso (n, dayso):
-  for i in range (n):
-    dayso.append(int(input("nhập số thứ: ")))
-def sapxep(dayso):
-  dayso.sort()
-  return(dayso)
-nhapso (n, dayso)
-sapxep(dayso)
-listmoi = []
-nhodenlon = sapxep(dayso)
-listmoi.append(nhodenlon)
-print(listmoi)
