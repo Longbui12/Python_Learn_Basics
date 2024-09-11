@@ -1,0 +1,1 @@
+, isChampionA, whatToEatA
