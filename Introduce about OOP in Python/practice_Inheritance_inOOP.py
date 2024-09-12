@@ -55,10 +55,11 @@ class Cat(Animal):
         # assign values ​​to additional properties :
         self.color = colorA
         self.whatToEat = whatToEatA
-        # override method :
-        def makeVoice(self):
+        
+    # override method :
+    def makeVoice(self):
             print('{0}: meow meow'.format(self.name))
-        def printMe(self):
+    def printMe(self):
             super().printMe()
             print('whatToEatA = {0}, color = {1}'.format(self.whatToEat, self.color ))
           
