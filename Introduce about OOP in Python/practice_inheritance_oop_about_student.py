@@ -23,30 +23,40 @@ class People:
 
 class Student(People):
     #contructor:
-    def __init__(self, fullName, yearOfBirth, sex, studentId, codeClass, schoolName ):
+    def __init__(self, fullName, yearOfBirth, sex, studentId, codeClass, schoolName, hobbyPersonal ):
         People.__init__(self, fullName, yearOfBirth, sex)
         self.student = studentId
         self.code = codeClass
         self.school = schoolName
+        self.hobby = hobbyPersonal
     
     def eat(self):
-        print('An com = {0}'.format(self.name))
+        print('An com : {0}'.format(self.name))
     def drink(self):
-        print('Uong bia = {0}'.format(self.name))
+        print('Uong bia : {0}'.format(self.name))
     def sleep(self):
         print('Ngu tren giuong : {0}'.format(self.name))
     
     def inforOfStudent(self):
-        print('student = {0}, code = {1}, school ={2}'.format(self.student, self.code, self.school))
+        print('student: {0}, code: {1}, school: {2}, hobby: {3}'.format(self.student, self.code, self.school, self.hobby))
     
     def homeWork(self):
-        print('{0}: Student allway home work'.format(self.name))
+        print('{0}: Student allway to home work'.format(self.name))
 
-C1 = Student("Mr.Teo", 2000, 'Gay',111111, 'tn23tr', 'Hoa khanh University' )   
+C1 = Student("Mr.Teo", 2000, 'Gay',111111, 'tn23tr', 'Hoa khanh University', 'An nhau')   
 C1.eat()
 C1.drink()
 C1.sleep()
 C1.inforOfStudent()
 C1.homeWork()
 
-# hobby ....
+
+C2= Student('Neik', 2004, 'Lesbian', 22222, 'zall11', 'Lien Chieu College', 'Di bar')
+C2.eat()
+C2.drink()
+C2.sleep()
+C2.inforOfStudent()
+C2.homeWork()
+
+
+
